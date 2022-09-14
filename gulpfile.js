@@ -6,11 +6,11 @@ gulp.task('serve', function() {
   browserSync.init({
     server: {
       baseDir: "./"
-    }/*,
+    },
     online: true,
     tunnel: true,
     tunnel: "nefely",
-    logLevel: "debug"*/
+    logLevel: "debug"
   });
 
   gulp.watch("./**/*.html").on("change", reload);
